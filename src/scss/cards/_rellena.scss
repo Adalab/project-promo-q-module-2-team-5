@@ -1,0 +1,11 @@
+.fill {
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    display: flex;
+
+    h3 {
+    }
+  }
+}
