@@ -3,6 +3,10 @@
     height: 15vh;
     display: flex;
     justify-content: center;
+    @media all and (min-width: 768px){
+        justify-content: flex-start;
+        margin-left: 40px;
+    }
 }
 
 .logo-apc {
