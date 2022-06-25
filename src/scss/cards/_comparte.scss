@@ -1,0 +1,52 @@
+.icon-share {
+    color: $color-icon;
+}
+
+.h2-share {
+    color: $color-font;
+}
+
+.container-button-share {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.button-share {
+    text-transform: uppercase;
+    padding: 10px;
+    background-color: $color-icon;
+    border: 1px $color-icon;
+    border-radius: 5px;
+    color: $color-border-reset;
+    font-weight: 400;
+
+
+
+
+}
+
+.share-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.p-share {
+    color: $color-font;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.link-twitter {
+    color: $color-icon;
+}
+
+.button-twitter {
+    background-color: $color-twitter;
+    padding: 3px;
+    border-radius: 5px;
+    border: 1px $color-icon;
+}
