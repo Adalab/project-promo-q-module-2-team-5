@@ -1,80 +1,79 @@
 <section class="fill">
   <div class="fill__title">
-    <i class="fa-solid fa-keyboard"></i>
-    <h3>rellena</h3>
+    <i class="fill__title--icon fa-solid fa-keyboard"></i>
+    <h3 class="fill__title--word">rellena</h3>
   </div>
 
-  <div class="fill__form">
-    <form class="fill__form--item" action="#" method="post">
-      <label for="name">
-        nombre completo <span>*</span>
-        <input
-          placeholder="Ej: Sally Hill"
-          id="name"
-          type="text"
-          name="name"
-          required
-        />
-      </label>
+  <div>
+    <form class="fill__form" action="#" method="post">
+      <label for="name"> Nombre completo </label>
 
-      <label for="job"
-        >puesto <span>*</span>
-        <input
-          placeholder="Ej: Front-end unicorn"
-          id="name"
-          type="text"
-          name="name"
-          required
-        />
-      </label>
+      <input
+        class="fill__form--imput"
+        placeholder="Ej: Sally Hill"
+        id="name"
+        type="text"
+        name="name"
+        required
+      />
 
-      <label for="profileImg"
-        >imagen de perfil <span>*</span>
-        <input id="profileImg" type="text" name="profileImg" required />
-      </label>
+      <label for="job">Puesto </label>
+      <input
+        class="fill__form--imput"
+        placeholder="Ej: Front-end unicorn"
+        id="name"
+        type="text"
+        name="name"
+        required
+      />
 
-      <label for="email"
-        >email <span>*</span>
-        <input
-          placeholder="Ej:sally-hill@gmail.com"
-          id="email"
-          type="email"
-          value="Añadir Imagen"
-          required
-        />
-      </label>
+      <label for="profileImg">Imagen de perfil <span>*</span> </label>
+      <input
+        class="fill__form--img"
+        id="profileImg"
+        type="file"
+        name="profileImg"
+        value="Añadir imagen"
+        required
+      />
 
-      <label for="telefone"
-        >teléfono
-        <input
-          placeholder="Ej:555-55-55-55"
-          id="telefone"
-          type="tel"
-          name="telefone"
-        />
-      </label>
+      <label for="email">Email <span>*</span> </label>
+      <input
+        class="fill__form--imput"
+        placeholder="Ej: sally-hill@gmail.com"
+        id="email"
+        type="email"
+        required
+      />
 
-      <label for="LinkedIn"
-        >LinkedIn <span>*</span>
-        <input
-          placeholder="Ej: linkedin.com/in/sally.hill"
-          id="LinkedIn"
-          type="text"
-          name="LinkedIn"
-          required
-        />
-      </label>
+      <label for="telefone">Teléfono </label>
+      <input
+        class="fill__form--imput"
+        placeholder="Ej: 555-55-55-55"
+        id="telefone"
+        type="tel"
+        name="telefone"
+      />
 
-      <label for="github"
-        >Github <span>*</span>
-        <input
-          placeholder="Ej: @sally-hill"
-          id="github"
-          type="text"
-          name="github"
-          required
-        />
-      </label>
+      <label for="LinkedIn">LinkedIn <span>*</span> </label>
+      <input
+        class="fill__form--imput"
+        placeholder="Ej: linkedin.com/in/sally.hill"
+        id="LinkedIn"
+        type="text"
+        name="LinkedIn"
+        required
+      />
+
+      <label for="github">Github <span>*</span> </label>
+      <input
+        class="fill__form--imput"
+        placeholder="Ej: @sally-hill"
+        id="github"
+        type="text"
+        name="github"
+        required
+      />
     </form>
   </div>
 </section>
