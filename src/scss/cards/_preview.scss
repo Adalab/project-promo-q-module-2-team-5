@@ -58,7 +58,7 @@
 
 .card {
     width: 300px;
-    height: 329px;
+    height: 357px;
     padding: 8px 0;
     margin: 20px 35px 40px 45px;
     border-radius: 4px;
@@ -70,7 +70,6 @@
         &__info{
             margin-top: 20px;
             border-left: 5px solid $color-button-bar;
-            font-weight: 600;
             margin-bottom: 10px;
 
             &--name{
@@ -78,10 +77,12 @@
                 text-transform: capitalize;
                 padding-left: 20px;
                 font-size: 18px;
+                font-weight: 600;
             }
             &--job{
                 padding-left: 20px;
                 font-size: 18px;
+                color: $color-font ;
             }
 
         }
