@@ -1,12 +1,9 @@
 .share1 {
     display: flex;
     flex-direction: column;
-
     font-family: "Open Sans", sans-serif;
     font-size: 14px;
     border-bottom: 2px solid #d8d8d8;
-
-
 
     &__div {
         display: flex;
@@ -15,43 +12,40 @@
         padding-left: 20px;
         padding-top: 20px;
 
+        &--icon {
+            color: $color-icon;
+            font-size: 20px;
+        }
 
+        &--h3 {
+            color: $color-font;
+            text-transform: uppercase;
+            font-weight: bold;
+            color: $color-font;
+            font-size: 18px;
+        }
+
+        &--up {
+            color: $color-font;
+            font-size: 20px;
+        }
 
     }
-
-    &__h3 {
-        color: $color-font;
-
-        text-transform: uppercase;
-        font-weight: bold;
-        color: #54585a;
-        font-size: 18px;
-
-
-    }
-
-    &__icon {
-        color: $color-icon;
-        font-size: 20px;
-
-    }
-
-
 
     &__container {
         text-align: center;
-    }
 
-    &__button {
-        text-transform: uppercase;
-        padding: 10px;
-        background-color: $color-icon;
-        border: 1px $color-icon;
-        border-radius: 5px;
-        color: $color-border-reset;
-        font-weight: 400;
-        margin-bottom: 20px;
-        gap: 5px;
+        &--button {
+            text-transform: uppercase;
+            padding: 10px;
+            background-color: $color-icon;
+            border: 1px $color-icon;
+            border-radius: 5px;
+            color: $color-border-reset;
+            font-weight: 400;
+            margin-bottom: 20px;
+            gap: 5px;
+        }
     }
 }
 
