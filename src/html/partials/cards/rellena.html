@@ -2,6 +2,7 @@
   <div class="fill__title">
     <i class="fill__title--icon fa-solid fa-keyboard"></i>
     <h3 class="fill__title--word">rellena</h3>
+    <i class="fill__title--chevron fa-solid fa-chevron-up"></i>
   </div>
 
   <div>
@@ -27,15 +28,22 @@
         required
       />
 
-      <label for="profileImg">Imagen de perfil <span>*</span> </label>
-      <input
-        class="fill__form--img"
-        id="profileImg"
-        type="file"
-        name="profileImg"
-        value="Añadir imagen"
-        required
-      />
+      <p class="profileImgTitle">Imagen de perfil</p>
+
+      <div class="imgButton">
+        <div class="action">
+          <label class="action__upload-btn" for="profileImg"
+            >Añadir imagen</label
+          >
+          <input
+            type="file"
+            name="profileImg"
+            id="profileImg"
+            class="action__hiddenField js__profile-upload-btn"
+          />
+        </div>
+        <div class="profile__preview js__profile-preview"></div>
+      </div>
 
       <label for="email">Email <span>*</span> </label>
       <input
