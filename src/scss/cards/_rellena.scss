@@ -7,6 +7,11 @@
   font-size: 14px;
   margin: 0px 20px;
 
+  hr {
+    height: 1px;
+    color: $color-font-footer;
+  }
+
   &__title {
     display: flex;
     gap: 10px;
