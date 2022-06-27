@@ -1,67 +1,81 @@
 .landing {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    width: 100vw;
     height: 80vh;
-
-    background-color: #f5f5f5;
+    background-color: $background-landing;
     justify-content: center;
+    @media all and (min-width: 768px) {
+        height: 963px;
+    }
 
     &__logo {
         width: 250px;
-        height: 63px;
-
+        padding-top: 95px;
+        @media all and (min-width: 768px) {
+            padding-top: 350px;
+            width: 419px;
+            height: 105px;
+        }
     }
 
     &__title {
         font-family: $font-title;
-        color: #e17334;
-        font-size: 24px;
+        color: $color-icon;
+        font-size: 1.5rem;
         font-weight: 900;
-        margin: 45px 35px 10px 35px;
+        margin: 35.4px 22.9px 0px 22.1px;
     }
 
     &__description {
         font-family: $font-main;
         text-align: center;
-        margin: 0px 1.6px 10px 1.6px;
-        font-size: 16px;
-        color: #114e4e;
-
+        margin: 10px 28px 18px 28px;
+        line-height: 1.3rem;
+        font-size: 1rem;
+        color: $color-font-preview;
     }
-
-    &__link {
-        text-align: center;
-        width: 129px;
-        height: 30px;
-        margin: 30px 75px 0 65px;
-        padding: 13px 15px 5px 13px;
-        border-radius: 30px;
-        background-color: #438792;
-        color: white;
-        font-family: $font-main;
-        font-size: 16px;
-        font-weight: 600;
-        text-decoration: none;
-        text-transform: uppercase;
-    }
-
     &__icons {
         display: flex;
         justify-content: space-around;
         text-align: center;
         align-items: center;
-        width: 300px;
+        width: 268px;
         height: 73.8px;
         border-radius: 4px;
-        border: 1.6px solid #e17334;
-        /*border-color: rgba($borderColor, 0.5);*/
-
-        font-family: $font-main;
-        font-size: 12.8px;
-        margin: 19px 0 0 11.5px;
-        color: #54585a;
-
+        border: 1.6px solid rgba($color-icon, 0.5);
+        margin: 17.8px 0 30px;
+        padding: 15px 20px 9.8px 20px;
+        gap: 30px;
+        
+        &--text {
+            font-family: $font-main;
+            font-size: 1rem;
+            color: $color-font;
+        }
+        &--img {
+            font-size: 1.563rem;
+            color: $color-icon;
+            width: 25px;
+            height: 26px;
+        }
     }
+    &__link {
+        text-align: center;
+        width: 110px;
+        height: 25px;
+        margin: 15px 75px 50px 65px;
+        padding: 14px 20px;
+        border-radius: 30px;
+        background-color: $color-button-bar;
+        color: $color-border-reset;
+        font-family: $font-main;
+        font-size: 1rem;
+        font-weight: 600;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+   
 }

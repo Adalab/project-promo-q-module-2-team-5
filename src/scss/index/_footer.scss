@@ -3,37 +3,39 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: white;
-  border: solid 1px #d8d8d8;
-  position: relative;
-  padding-bottom: 25px;
+  background-color: $color-border-reset;
+  /*border: solid 1px $color-font-footer;*/
+  width: 100vw;
+  height: 110px;
+  padding-bottom: 15px;
   padding-top: 15px;
 
   @media all and (min-width: 768px) {
-    position: absolute;
-    left: 20px;
+    flex-direction: row;
+    height: 60px; 
+    padding-left: 20px;
+    
   }
 
   &__copyright {
     font-family: $font-main;
-    font-size: 14px;
+    font-size: 0.875;
     margin: 0 0 12px;
-    line-height: 3.43;
-    color: #6b6b6b;
+    line-height: 1.43;
+    color: rgba($color-font, 0.5);
 
     @media all and (min-width: 768px) {
-      position: absolute;
-      left: 20px;
+      margin: 0 10px;
     }
   }
 
   &__logo {
     width: 103px;
     height: 40px;
+    margin: 12px 47px 0 48px;
 
     @media all and (min-width: 768px) {
-      position: absolute;
-      right: 20px;
+      margin-left: auto;
     }
   }
 }
