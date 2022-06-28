@@ -2,6 +2,15 @@
     background: rgb(245, 245, 245);
     background: linear-gradient(131deg, rgba(245, 245, 245, 1) 0%, rgba(255, 255, 255, 1) 36%);
 
+    &__preview{
+        padding-top: 38px;
+        height: 55vh;
+        background: linear-gradient(180deg, $background-card-2 0%, $background-card-1 36%);
+        display: grid;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
     @media all and (min-width: 768px) {
         padding: 20px 40px 20px 40px;
         display: flex;
@@ -14,32 +23,20 @@
 
         &__preview {
             width: 40%;
+            height: 80vh;
+            border-radius: 5px;
+            order: 2;
         }
     }
-}
-
-.main__preview {
-    padding-top: 38px;
-    height: 55vh;
-    background: linear-gradient(180deg, $background-card-2 0%, $background-card-1 36%);
-    display: grid;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 80vh;
-
-    @media all and (min-width: 768px) {
-        width: 48%;
-        height: 80vh;
-        border-radius: 5px;
-        order: 2;
-    }
-
     @media all and (min-width: 1200px) {
+        &__preview{
         width: 60%;
+        }
     }
+
 }
 
-.reset {
+.button {
     width: 75px;
     height: 30px;
     margin-left: 45px;
@@ -50,10 +47,10 @@
     align-self: flex-end;
     border: $color-border-reset solid 1px;
     border-radius: 50px;
+    background-color: transparent;
 
-    &__button {
+    &__reset {
         border: none;
-        background-color: transparent;
         font-family: "Open Sans", sans-serif;
         font-size: 15px;
     }
@@ -61,58 +58,60 @@
 
 .card {
     width: 300px;
-    height: 40vh;
+    height: 357px;
     padding: 8px 0;
     margin: 20px 35px 40px 45px;
+    border-radius: 4px;
     background-color: $color-border-reset;
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
 
-.info {
-    margin-top: 20px;
-    border-left: 5px solid $color-button-bar;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
+        &__info{
+            margin-top: 20px;
+            border-left: 5px solid $color-button-bar;
+            margin-bottom: 10px;
 
-.info p {
-    padding-left: 20px;
-    font-size: 18px;
-}
+            &--name{
+                color: $color-font-preview;
+                text-transform: capitalize;
+                padding-left: 20px;
+                font-size: 18px;
+                font-weight: 600;
+            }
+            &--job{
+                padding-left: 20px;
+                font-size: 18px;
+                color: $color-font ;
+            }
 
-.name {
-    color: $color-font-preview;
-    text-transform: capitalize;
+        }
+        &__photo{
+            height: 240px;
+        }
+} 
 
-}
-
-.photo {
-    height: 240px;
-}
-
-.rrss-list {
+.rrss {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     gap: 5px;
     height: 52px;
     padding-left: 20px;
+    
+    &__list{
+        border: 2px solid $color-round-icon;
+        border-radius: 50%;
+        margin: 5px;
+        padding: 5px;
+
+        &--item{
+            padding: 5px;
+            color: $color-font-preview;
+            padding-top: 13px;
+            
+        }
+    }
 
 
-}
-
-.rrss-item {
-
-    border: 2px solid $color-round-icon;
-    border-radius: 50%;
-    margin: 5px;
-    padding: 5px;
-}
-
-.fa-xl {
-    padding: 5px;
-    color: $color-font-preview;
-    padding-top: 13px;
 }

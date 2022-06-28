@@ -4,7 +4,8 @@
     font-family: $font-main;
     color: $color-font-preview;
     font-size: 14px;
-    margin: 0px 20px;
+    margin: 0px 20px 20px;
+    border-bottom: 2px solid #d8d8d8;
 
 
     &__title {
@@ -12,6 +13,8 @@
           color: $color-font;
           display: flex;
           flex-direction: row;
+          gap: 10px;
+          font-size: 18px;
 
           &--icon {
               color: $color-icon;
@@ -21,10 +24,11 @@
           &--title {
         text-transform: uppercase;
           font-weight: bold;
-          font-size: 18px;
           padding-bottom: 22px;
-          padding-left: 10px;
         
+        }
+        &--icon2 {
+            justify-self: flex-end;
         }
 
         }
@@ -34,19 +38,22 @@
             padding: 22px 80px 0px 39px; 
         }
       }
-    
+      .color-palet {
+        display: inline-flex;
+        
+    }  
     .election {
         margin-left: 183px;
 
-
-
+        &__options {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-left: 40px;
+            margin-bottom: 20px;
+        }
     }
 
-    .rectangle-1 , .rectangle-2 , .rectangle-3{
-        margin-bottom: 28px;
-        display: flex;
-        margin-left: 10px ;
-    }
 
     .rectangle-1{
         &__a{

@@ -1,52 +1,87 @@
-.icon-share {
-    color: $color-icon;
-}
-
-.h2-share {
-    color: $color-font;
-}
-
-.container-button-share {
+.share1 {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    border-bottom: 2px solid #d8d8d8;
 
+    &__div {
+        display: flex;
+        gap: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-top: 20px;
+
+        &--icon {
+            color: $color-icon;
+            font-size: 20px;
+        }
+
+        &--h3 {
+            color: $color-font;
+            text-transform: uppercase;
+            font-weight: bold;
+            color: $color-font;
+            font-size: 18px;
+        }
+
+        &--up {
+            color: $color-font;
+            font-size: 20px;
+        }
+
+    }
+
+    &__container {
+        text-align: center;
+
+        &--button {
+            text-transform: uppercase;
+            padding: 10px;
+            background-color: $color-icon;
+            border: 1px $color-icon;
+            border-radius: 5px;
+            color: $color-border-reset;
+            font-weight: 400;
+            margin-bottom: 20px;
+            gap: 5px;
+        }
+    }
 }
 
-.button-share {
-    text-transform: uppercase;
-    padding: 10px;
-    background-color: $color-icon;
-    border: 1px $color-icon;
-    border-radius: 5px;
-    color: $color-border-reset;
-    font-weight: 400;
-
-
-
-
-}
-
-.share-2 {
+.share2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
+    border-bottom: 2px solid #d8d8d8;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
 
-.p-share {
-    color: $color-font;
-    text-align: center;
-    padding-bottom: 5px;
-}
 
-.link-twitter {
-    color: $color-icon;
-}
+    &__p {
+        color: $color-font;
+        text-align: center;
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+        margin-top: 20px;
+        font-weight: bold;
 
-.button-twitter {
-    background-color: $color-twitter;
-    padding: 3px;
-    border-radius: 5px;
-    border: 1px $color-icon;
+    }
+
+    &__link {
+        color: $color-icon;
+        margin-bottom: 10px;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    &__button--twitter {
+        background-color: $color-twitter;
+        padding: 5px;
+        border-radius: 5px;
+        border: 1px $color-icon;
+        margin-bottom: 20px;
+        color: $color-border-reset;
+    }
 }

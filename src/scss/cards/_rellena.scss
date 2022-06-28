@@ -1,26 +1,29 @@
 .fill {
-
   display: flex;
   flex-direction: column;
   font-family: $font-main;
   color: $color-font-preview;
   font-size: 14px;
   margin: 0px 20px;
+  border-bottom: 2px solid $color-font-footer;
 
   &__title {
     display: flex;
     gap: 10px;
+    font-size: 18px;
 
     &--icon {
       color: $color-icon;
-      font-size: 18px;
     }
 
     &--word {
       text-transform: uppercase;
       font-weight: bold;
       color: $color-font;
-      font-size: 18px;
+    }
+
+    &--chevron {
+      justify-self: flex-end;
     }
   }
 
@@ -43,9 +46,47 @@
         color: $color-placeholder;
       }
     }
-
-    &--img {
-      margin-bottom: 20px;
-    }
   }
+}
+
+.profileImgTitle {
+  margin-bottom: 7px;
+}
+
+.imgButton {
+  display: flex;
+  gap: 20px;
+}
+
+.action {
+  width: 140px;
+  height: 30px;
+  margin-bottom: 20px;
+}
+.action__upload-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: $color-icon;
+  border-radius: 3px;
+  box-sizing: border-box;
+  color: $color-border-reset;
+  font-size: 14px;
+  cursor: pointer;
+}
+.action__hiddenField {
+  /* Ocultamos el input de tipo "file" porque no podemos 
+  darle los estilos que queremos */
+  display: none;
+}
+
+.profile__preview {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid $color-round-icon;
+  width: 30px;
+  height: 30px;
 }
