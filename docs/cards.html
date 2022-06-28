@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/e653573ea4.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <title>Awesome Cards</title>
+  </head>
+  <body>
+    <header class="second__header">
+        <a href=""><img class="second__logo" src="https://raw.githubusercontent.com/Adalab/pw-project-promo-x-module-2-team-profes/667b43cace7199f7a58bbe22798ea2b26e8c183a/assets/logo-awesome-profile-cards.svg" alt="logo-awesome-profile-cards" title="Logo Awesome Profile-Cards"></a>
+    </header>
+
+    <main class="main">
+      <section class="main__preview">
+          <button class="button">
+              <i class="fa-regular fa-trash-can"></i>
+              <p class="button__reset" > Reset </p>
+          </button>
+          <aside class="card">
+              <div class="card__info">
+                  <p class="card__info--name">Nombre apelido</p>
+                  <p class="card__info--job">Front-end developer</p>
+              </div>
+              <img class="card__photo" src="https://via.placeholder.com/240x200/200/fff.png
+              " alt="Profile pic">
+              <ol class="rrss">
+                  <li class="rrss__list">
+                      <a href="#" target="_blank">
+                          <i class="rrss__list--item fa-solid fa-mobile-screen fa-xl"></i>
+                      </a>
+                  </li>
+                  <li class="rrss__list">
+                      <a href="#" target="_blank">
+                          <i class="rrss__list--item fa-regular fa-envelope fa-xl"></i>
+                      </a>
+                  </li>
+                  <li class="rrss__list">
+                      <a href="#" target="_blank">
+                          <i class="rrss__list--item fa-brands fa-linkedin-in fa-xl"></i>
+                      </a>
+                  </li>
+                  <li class="rrss__list">
+                      <a href="#" target="_blank">
+                          <i class="rrss__list--item fa-brands fa-github-alt fa-xl"></i>
+                      </a>
+                  </li>
+              </ol>
+          </aside>
+      </section>
+
+      <section>
+        <section class="design">
+          <div class="design__title">
+            <i class="design__title--icon fa-regular fa-object-ungroup"></i>
+            <h2 class="design__title--title">Diseña</h2>
+            <i class="design__title--icon2 fa-solid fa-chevron-up"></i>
+          </div>
+          <h3 class="design__color">Colores</h3>
+          <div class="election">
+            <div class="election__options point">
+            <label  class="color-palet" for="colors1"
+              ><input
+                id="colors1"
+                type="radio"
+                value="selectcolors"
+                name="selectcolors"
+              />
+              <div class="election__options">
+                <div class="rectangle-1__a"></div>
+                <div class="rectangle-1__b"></div>
+                <div class="rectangle-1__c"></div>
+              </div>
+            </div>
+            </label>
+            <div class="election__options point">
+            <label class="color-palet" for="colors2"
+              ><input
+                id="colors2"
+                type="radio"
+                value="selectcolors"
+                name="selectcolors"
+              />
+              <div class="election__options">
+                <div class="rectangle-2__a"></div>
+                <div class="rectangle-2__b"></div>
+                <div class="rectangle-2__c"></div>
+              </div>
+            </div>
+            </label>
+            <div class="election__options point">
+            <label class="color-palet" for="colors3"
+              ><input
+                id="colors3"
+                type="radio"
+                value="selectcolors"
+                name="selectcolors" />
+              <div class="election__options">
+                <div class="rectangle-3__a"></div>
+                <div class="rectangle-3__b"></div>
+                <div class="rectangle-3__c"></div></div
+            ></label>
+          </div>
+        </div>
+        </section>
+
+        <fieldset class="fill">
+          <div class="fill__title">
+            <div class="container">
+              <i class="fill__title--icon fa-solid fa-keyboard"></i>
+              <h3 class="fill__title--word">rellena</h3>
+            </div>
+            <i class="fill__title--chevron fa-solid fa-chevron-up"></i>
+          </div>
+
+          <div>
+            <form class="fill__form" action="#" method="post">
+              <label for="name"> Nombre completo </label>
+
+              <input
+                class="fill__form--imput"
+                placeholder="Ej: Sally Hill"
+                id="name"
+                type="text"
+                name="name"
+                required
+              />
+
+              <label for="job">Puesto </label>
+              <input
+                class="fill__form--imput"
+                placeholder="Ej: Front-end unicorn"
+                id="name"
+                type="text"
+                name="name"
+                required
+              />
+
+              <p class="profileImgTitle">Imagen de perfil</p>
+
+              <div class="imgButton">
+                <div class="action">
+                  <label class="action__upload-btn" for="profileImg"
+                    >Añadir imagen</label
+                  >
+                  <input
+                    type="file"
+                    name="profileImg"
+                    id="profileImg"
+                    class="action__hiddenField js__profile-upload-btn"
+                  />
+                </div>
+                <div class="profile__preview js__profile-preview"></div>
+              </div>
+
+              <label for="email">Email <span>*</span> </label>
+              <input
+                class="fill__form--imput"
+                placeholder="Ej: sally-hill@gmail.com"
+                id="email"
+                type="email"
+                required
+              />
+
+              <label for="telefone">Teléfono </label>
+              <input
+                class="fill__form--imput"
+                placeholder="Ej: 555-55-55-55"
+                id="telefone"
+                type="tel"
+                name="telefone"
+              />
+
+              <label for="LinkedIn">LinkedIn <span>*</span> </label>
+              <input
+                class="fill__form--imput"
+                placeholder="Ej: linkedin.com/in/sally.hill"
+                id="LinkedIn"
+                type="text"
+                name="LinkedIn"
+                required
+              />
+
+              <label for="github">Github <span>*</span> </label>
+              <input
+                class="fill__form--imput"
+                placeholder="Ej: @sally-hill"
+                id="github"
+                type="text"
+                name="github"
+                required
+              />
+            </form>
+          </div>
+
+          <hr />
+        </fieldset>
+
+        <section class="share1">
+          <div class="share1__div">
+            <i class="fa-solid share1__div--icon fa-share-nodes"></i>
+            <h3 class="share1__div--h3">Comparte</h3>
+            <i class="share1__div--up fa-solid fa-chevron-up"></i>
+          </div>
+          <div class="share1__container">
+            <button class="share1__container--button">
+              <i class="fa-solid fa-address-card"></i> Crear tarjeta
+            </button>
+          </div>
+        </section>
+        <section class="share2">
+          <p class="share2__p">La tarjeta ha sido creada:</p>
+          <a class="share2__link" href="https://awesome-profile-card.com?id=A456DF0001"
+            >https://awesome-profile-card.com?id=A456DF0001</a
+          >
+
+          <div>
+            <a href="#">
+              <button class="share2__button--twitter">
+                <i class="fa-brands fa-twitter"></i>Compartir en twitter
+              </button>
+            </a>
+          </div>
+        </section>
+
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p class="footer__copyright">Awesome profile-cards &#169 2022</p>
+      <img class="footer__logo" src="./assets/images/logo-adalab.png" alt="Logo">
+    </footer>
+
+  </body>
+</html>
