@@ -4,12 +4,13 @@
     font-family: "Open Sans", sans-serif;
     font-size: 14px;
     border-bottom: 2px solid #d8d8d8;
+    margin: 0px 20px;
 
     &__div {
         display: flex;
         gap: 10px;
         padding-bottom: 10px;
-        padding-left: 20px;
+
         padding-top: 20px;
 
         &--icon {
@@ -32,6 +33,8 @@
 
     }
 
+
+
     &__container {
         text-align: center;
 
@@ -48,6 +51,8 @@
         }
     }
 }
+
+
 
 .share2 {
     display: flex;
@@ -84,4 +89,9 @@
         margin-bottom: 20px;
         color: $color-border-reset;
     }
+}
+
+.container-row {
+    display: flex;
+    justify-content: space-between
 }
