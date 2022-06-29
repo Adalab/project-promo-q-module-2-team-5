@@ -1,5 +1,6 @@
 .main {
     background: linear-gradient(180deg, rgba(245,245,245,1) 0%, rgba(255,255,255,1) 36%);
+    gap: 20px;
 
     &__preview{
         padding-top: 38px;
@@ -26,10 +27,17 @@
             border-radius: 5px;
             order: 2;
         }
+
+        &__container{
+            width: 60%;
+        }
     }
     @media all and (min-width: 1200px) {
         &__preview{
         width: 60%;
+        }
+        &__container{
+            width: 40%;
         }
     }
 

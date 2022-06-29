@@ -37,3 +37,11 @@ function handleClickShare (ev){
 designArrow.addEventListener('click', handleClickDesign);
 fillArrow.addEventListener('click', handleClickFill);
 shareArrow.addEventListener('click', handleClickShare);
+
+
+// if design desplegado {
+//    fill y share se van a la mierda
+// else if fill desplegado
+
+// }
+//}
