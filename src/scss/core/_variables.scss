@@ -22,3 +22,13 @@ $color-round-icon-2: #e95626;
 $color-font-preview-3: #3e5b65;
 $color-button-bar-3:#eab052;
 $color-round-icon-3: #a0c0cf;
+
+// Clases para js
+
+.collapsed{
+    display: none;
+}
+
+.rotate{
+    transform: rotate(180deg);
+}
