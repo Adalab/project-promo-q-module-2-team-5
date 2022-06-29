@@ -6,11 +6,13 @@
     font-size: 14px;
     margin: 0px 20px 20px;
     border-bottom: 2px solid #d8d8d8;
+  
     
     &__container {
     display: flex;
     gap: 10px;
     }
+ 
     
     &__title {
         margin-top: 27px;
@@ -21,27 +23,26 @@
           justify-content: space-between;
           
 
-
-          &--icon {
+        &--icon {
               color: $color-icon;
-              font-size: 18px;
-              
+              font-size: 18px;     
         }
 
-          &--title {
+
+        &--title {
         text-transform: uppercase;
           font-weight: bold;
           padding-bottom: 22px;
-        
         }
+
+
         &--icon2 {
             justify-self: flex-end;
+        }        
+    }
 
-        }
 
-
-        }
-     &__color {
+    &__color {
             text-transform: uppercase;
             font-size: 14px;
             padding: 22px 80px 0px 39px; 
@@ -49,23 +50,26 @@
       }
 
 
-      .color-palet {
-        display: inline-flex;
-        
+.color-palet {
+        display: flex;
+        flex-direction: row;
+        align-items: center;         
     }  
-    .election {
-        margin-left: 183px;
 
+
+.election {      
         &__options {
             display: flex;
-            flex-direction: row;
-            align-items: center;
-            margin-left: 40px;
-            margin-bottom: 20px;
+            justify-content: right;            
         }
     }
 
-    .rectangle-1{
+
+.rectangle {
+    padding: 10px 0 10px 10px;
+}
+
+.rectangle-1{
         &__a{
             width: 30px;
             height: 25px;
@@ -83,7 +87,7 @@
         }
     }
 
-    .rectangle-2{
+.rectangle-2{
         &__a{
             width: 30px;
             height: 25px;
@@ -101,7 +105,7 @@
         }
     }
 
-    .rectangle-3{
+.rectangle-3{
         &__a{
             width: 30px;
             height: 25px;
