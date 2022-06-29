@@ -8,9 +8,9 @@
 
     &__div {
         display: flex;
-        gap: 10px;
-        padding-bottom: 10px;
 
+        padding-bottom: 10px;
+        justify-content: space-between;
         padding-top: 20px;
 
         &--icon {
@@ -50,6 +50,11 @@
             gap: 5px;
         }
     }
+}
+
+.header-container{
+    display: flex;
+    gap: 10px;
 }
 
 
