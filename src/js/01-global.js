@@ -27,6 +27,7 @@ const shareArrow = document.querySelector('.js-share-arrow');
 
 
 
+
 // if design desplegado {
 //    fill y share se van a la mierda
 // else if fill desplegado
