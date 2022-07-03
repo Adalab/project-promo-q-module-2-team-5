@@ -33,8 +33,10 @@ const data = {
 const handleInput = () => {
    
     data.name = inputName.value;
+    previewName.innerHTML = data.name;
 
 
 };
 
 inputName.addEventListener ('keyup', handleInput);
+
