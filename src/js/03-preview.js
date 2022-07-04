@@ -28,7 +28,7 @@ const handleInput = (ev) => {
     if (nameInput === "email" || nameInput === "tel" || nameInput === "linkedin" || nameInput === "github") {
         id.href = valueInput;
     }
-    if (nameInput === "profileImg") {
+    if (nameInput === "profileImage") {
         id.src = valueInput;
     }
 };
