@@ -4,89 +4,45 @@
       <i class="fill__title--icon fa-solid fa-keyboard"></i>
       <h3 class="fill__title--word">rellena</h3>
     </div>
-    <i
-      class="fill__title--chevron fa-solid fa-chevron-up js-fill-arrow"
-      id="fill"
-    ></i>
+    <i class="fill__title--chevron fa-solid fa-chevron-up js-fill-arrow" id="fill"></i>
   </div>
 
-  <div class="js-fillFieldset collapsed">
+  <div class="js-fillFieldset collapsed js_allInputs">
     <form class="fill__form" action="#" method="post">
       <label for="name"> Nombre completo </label>
 
-      <input
-        class="fill__form--imput js_inputName"
-        placeholder="Ej: Sally Hill"
-        id="name"
-        type="text"
-        name="name"
-        required
-      />
+      <input class="fill__form--imput js_inputName" placeholder="Ej: Sally Hill" id="name" type="text" name="name"
+        required />
 
       <label for="job">Puesto </label>
-      <input
-        class="fill__form--imput js_inputJob"
-        placeholder="Ej: Front-end unicorn"
-        id="job"
-        type="text"
-        name="job"
-        required
-      />
+      <input class="fill__form--imput js_inputJob" placeholder="Ej: Front-end unicorn" id="job" type="text" name="job"
+        required />
 
       <p class="profileImgTitle">Imagen de perfil</p>
 
       <div class="imgButton">
         <div class="action">
-          <label class="action__upload-btn" for="profileImg"
-            >Añadir imagen</label
-          >
-          <input
-            type="file"
-            name="profileImg"
-            id="profileImg"
-            class="action__hiddenField js__profile-upload-btn js_inputImg"
-          />
+          <label class="action__upload-btn" for="profileImg">Añadir imagen</label>
+          <input type="file" name="profileImg" id="profileImg"
+            class="action__hiddenField js__profile-upload-btn js_inputImg" />
         </div>
         <div class="profile__preview js__profile-preview"></div>
       </div>
 
       <label for="email">Email <span>*</span> </label>
-      <input
-        class="fill__form--imput js_inputEmail"
-        placeholder="Ej: sally-hill@gmail.com"
-        id="email"
-        type="email"
-        required
-      />
+      <input class="fill__form--imput js_inputEmail" placeholder="Ej: sally-hill@gmail.com" id="email" type="email"
+        name="email" required />
 
-      <label for="telefone">Teléfono </label>
-      <input
-        class="fill__form--imput js_inputTel"
-        placeholder="Ej: 555-55-55-55"
-        id="telefone"
-        type="tel"
-        name="telefone"
-      />
+      <label for="tel">Teléfono </label>
+      <input class="fill__form--imput js_inputTel" placeholder="Ej: 555-55-55-55" id="tel" type="tel" name="tel" />
 
       <label for="LinkedIn">LinkedIn <span>*</span> </label>
-      <input
-        class="fill__form--imput js_inputLinkedin"
-        placeholder="Ej: linkedin.com/in/sally.hill"
-        id="LinkedIn"
-        type="text"
-        name="LinkedIn"
-        required
-      />
+      <input class="fill__form--imput js_inputLinkedin" placeholder="Ej: linkedin.com/in/sally.hill" id="LinkedIn"
+        type="text" name="LinkedIn" required />
 
       <label for="github">Github <span>*</span> </label>
-      <input
-        class="fill__form--imput js_inputGithub"
-        placeholder="Ej: @sally-hill"
-        id="github"
-        type="text"
-        name="github"
-        required
-      />
+      <input class="fill__form--imput js_inputGithub" placeholder="Ej: @sally-hill" id="github" type="text"
+        name="github" required />
     </form>
   </div>
 

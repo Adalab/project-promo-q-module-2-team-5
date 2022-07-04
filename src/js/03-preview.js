@@ -1,6 +1,6 @@
 "use strict";
 
-const inputName = document.querySelector ('.js_inputName');
+/*const inputName = document.querySelector ('.js_inputName');
 const inputJob = document.querySelector ('.js_inputJob');
 const inputImg = document.querySelector ('.js_inputImg');
 const inputEmail = document.querySelector ('.js_inputEmail');
@@ -14,29 +14,37 @@ const previewImg = document.querySelector ('.js_previewImg');
 const previewTel = document.querySelector ('.js_previewTel');
 const previewEmail = document.querySelector ('.js_previewEmail');
 const previewLinkedin = document.querySelector ('.js_previewLinkedin');
-const previewGithub = document.querySelector ('.js_previewGithub');
+const previewGithub = document.querySelector ('.js_previewGithub');*/
 
-
+const allInputs = document.querySelector(".js_allInputs");
 
 
 const data = {
- palette: 1,
- name: '',
- job: '',
- phone: '',
- email: '',
- linkedin: '',
- github: '',
- photo: ''
+    palette: 1,
+    name: '',
+    job: '',
+    phone: '',
+    email: '',
+    linkedin: '',
+    github: '',
+    photo: ''
 };
 
-const handleInput = () => {
-   
-    data.name = inputName.value;
-    previewName.innerHTML = data.name;
+const handleInput = (ev) => {
+
+    const nameInput = ev.target.name;
+    const valueInput = ev.target.value;
+    const id = document.getElementById(nameInput);
+    data[nameInput] = valueInput;
+    console.log(id);
+
+
+
+    id.innerHTML = valueInput;
+
 
 
 };
 
-inputName.addEventListener ('keyup', handleInput);
+allInputs.addEventListener('keyup', handleInput);
 
