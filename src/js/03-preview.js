@@ -25,8 +25,14 @@ const handleInput = (ev) => {
     id.innerHTML = valueInput;
   }
 
-  if (nameInput === "email" || nameInput === "tel" || nameInput === "LinkedIn" || nameInput === "github") {
+  if (nameInput === "LinkedIn" || nameInput === "github") {
     id.href = valueInput;
+  }
+  else if (nameInput === "email"){
+    id.href = `mailto: ${valueInput}`;
+  }
+  else if (nameInput === "tel"){
+    id.href = `tel: ${valueInput}`;
   }
 };
 
