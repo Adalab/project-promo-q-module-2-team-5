@@ -14,19 +14,21 @@ const fillArrow = document.querySelector('.js-fill-arrow');
 const shareArrow = document.querySelector('.js-share-arrow');
 
 
+const inputName = document.querySelector ('.js_inputName');
+const inputJob = document.querySelector ('.js_inputJob');
+const inputImg = document.querySelector ('.js_inputImg');
+const inputEmail = document.querySelector ('.js_inputEmail');
+const inputTel = document.querySelector ('.js_inputTel');
+const inputLinkedin = document.querySelector ('.js_inputLinkedin');
+const inputGithub = document.querySelector ('.js_inputGithub');
 
-
-
-
-
-
-
-
-
-
-
-
-
+const previewName = document.querySelector ('.js_previewName');
+const previewJob = document.querySelector ('.js_previewJob');
+const previewImg = document.querySelector ('.js__profile-image');
+const previewTel = document.querySelector ('.js_previewTel');
+const previewEmail = document.querySelector ('.js_previewEmail');
+const previewLinkedin = document.querySelector ('.js_previewLinkedin');
+const previewGithub = document.querySelector ('.js_previewGithub');
 
 // if design desplegado {
 //    fill y share se van a la mierda

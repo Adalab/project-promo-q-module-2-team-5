@@ -24,8 +24,7 @@ const handleInput = (ev) => {
   if (nameInput === "name" || nameInput === "job") {
     id.innerHTML = valueInput;
   }
-
-  if (nameInput === "LinkedIn" || nameInput === "github") {
+  else if (nameInput === "LinkedIn" || nameInput === "github") {
     id.href = valueInput;
   }
   else if (nameInput === "email"){
@@ -35,6 +34,8 @@ const handleInput = (ev) => {
     id.href = `tel: ${valueInput}`;
   }
 };
+
+
 
 allInputs.addEventListener('keyup', handleInput);
 
