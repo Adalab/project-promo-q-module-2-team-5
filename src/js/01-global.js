@@ -31,6 +31,7 @@ const previewLinkedin = document.querySelector ('.js_previewLinkedin');
 const previewGithub = document.querySelector ('.js_previewGithub');
 
 const allRadios = document.querySelectorAll('.js_radio');
+const firstRadio = document.querySelector('.js_firstRadio');
 const previewCard = document.querySelector('.js_preview-container');
 
 

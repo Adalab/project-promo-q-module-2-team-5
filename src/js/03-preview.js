@@ -20,7 +20,6 @@ const handleInput = (ev) => {
   const valueInput = ev.target.value;
   const id = document.getElementById(nameInput);
   data[nameInput] = valueInput;
-  console.log(id);
   if (nameInput === "name" || nameInput === "job") {
     id.innerHTML = valueInput;
   }

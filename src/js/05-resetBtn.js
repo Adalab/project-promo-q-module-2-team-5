@@ -14,6 +14,8 @@ function clearObjectData () {
 }
 
 function renderPreview (data) {
+    previewCard.classList.remove('palette-2', 'palette-3');
+    previewCard.classList.add('palette-1');
     previewName.innerHTML = 'Nombre Apellido';
     previewJob.innerHTML = 'Front-end developer';
     previewTel.href = data.phone;
@@ -26,6 +28,7 @@ function renderPreview (data) {
 //hay que limpiar los inputs
 
 function clearAllInputs () {
+    firstRadio.checked = true;
     inputName.value= '';
     inputJob.value= '';
     inputTel.value= '';
@@ -42,6 +45,7 @@ const handleReset = (ev) =>{
     clearObjectData();
     renderPreview(data);
     clearAllInputs();
+
 };
 
 resetBtn.addEventListener('click', handleReset);

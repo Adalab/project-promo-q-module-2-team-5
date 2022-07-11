@@ -50,8 +50,6 @@ shareArrow.addEventListener('click', handleClick);
 function handleClickShare (ev){
   ev.preventDefault();
   shareTwitter.classList.remove('collapsed');
-
-
   shareBtn.classList.add('clicked');
 
 }
