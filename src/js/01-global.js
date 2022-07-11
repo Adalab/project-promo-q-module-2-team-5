@@ -30,6 +30,10 @@ const previewEmail = document.querySelector ('.js_previewEmail');
 const previewLinkedin = document.querySelector ('.js_previewLinkedin');
 const previewGithub = document.querySelector ('.js_previewGithub');
 
+const allRadios = document.querySelectorAll('.js_radio');
+const previewCard = document.querySelector('.js_preview-container');
+
+
 // if design desplegado {
 //    fill y share se van a la mierda
 // else if fill desplegado

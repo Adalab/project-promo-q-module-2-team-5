@@ -127,55 +127,53 @@
 
 //--------------------------Blue Card
 
-.blueinfo{
-    border-left: 5px solid $color-button-bar;
+.palette-1{
+    .card__info{
+        border-left: 5px solid $color-button-bar;
+        &--name{
+            color: $color-font-preview;
+        }
+    }
+    .rrss__list{
+        border: 2px solid $color-round-icon;
+        &--item{
+            color: $color-font-preview;
+        }
+    }
 }
 
-.bluename{
-    color: $color-font-preview;
-}
-
-.bluelist{
-    border: 2px solid $color-round-icon;
-}
-
-.blueitem{
-    color: $color-font-preview;
-}
 
 //--------------------------Red Card
 
-.redinfo{
-    border-left: 5px solid $color-button-bar-2;
-}
-
-.redname{
-    color: $color-font-preview-2;
-}
-
-.redlist{
-    border: 2px solid $color-round-icon-2;
-}
-
-.reditem{
-    color: $color-font-preview-2;
+.palette-2{
+    .card__info{
+        border-left: 5px solid $color-button-bar-2;
+        &--name{
+            color: $color-font-preview-2;
+        }
+    }
+    .rrss__list{
+        border: 2px solid $color-round-icon-2;
+        &--item{
+            color: $color-font-preview-2;
+        }
+    }
 }
 
 
 //--------------------------Grey Card
 
-.grayinfo{
-    border-left: 5px solid $color-button-bar-3;
-}
-
-.grayname{
-    color: $color-font-preview-3;
-}
-
-.graylist{
-    border: 2px solid $color-round-icon-3;
-}
-
-.grayitem{
-    color: $color-font-preview-3;
+.palette-3{
+    .card__info{
+        border-left: 5px solid $color-button-bar-3;
+        &--name{
+            color: $color-font-preview-3;
+        }
+    }
+    .rrss__list{
+        border: 2px solid $color-round-icon-3;
+        &--item{
+            color: $color-font-preview-3;
+        }
+    }
 }
