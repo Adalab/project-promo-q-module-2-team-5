@@ -23,13 +23,13 @@ const handleInput = (ev) => {
   if (nameInput === "name" || nameInput === "job") {
     id.innerHTML = valueInput;
   }
-  else if (nameInput === "LinkedIn" || nameInput === "github") {
+  else if (nameInput === "linkedin" || nameInput === "github") {
     id.href = valueInput;
   }
   else if (nameInput === "email"){
     id.href = `mailto: ${valueInput}`;
   }
-  else if (nameInput === "tel"){
+  else if (nameInput === "phone"){
     id.href = `tel: ${valueInput}`;
   }
 };

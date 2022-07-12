@@ -34,6 +34,8 @@ const allRadios = document.querySelectorAll('.js_radio');
 const firstRadio = document.querySelector('.js_firstRadio');
 const previewCard = document.querySelector('.js_preview-container');
 
+const shareBtn = document.querySelector('.js_shareBtn');
+
 
 // if design desplegado {
 //    fill y share se van a la mierda

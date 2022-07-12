@@ -1,7 +1,7 @@
 "use strict";
 
-const shareBtn = document.querySelector('.js_shareBtn');
-const warning = document.querySelector('.js_warning');
+
+
 const inputList = document.querySelectorAll('.js_input');
 const shareTwitter = document.querySelector('.js_shareTwitter');
 
@@ -47,13 +47,6 @@ shareArrow.addEventListener('click', handleClick);
 
 
 
-function handleClickShare (ev){
-  ev.preventDefault();
-  shareTwitter.classList.remove('collapsed');
-  shareBtn.classList.add('clicked');
 
-}
-
-shareBtn.addEventListener('click', handleClickShare);
 
 
