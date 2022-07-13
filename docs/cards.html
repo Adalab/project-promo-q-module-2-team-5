@@ -24,35 +24,35 @@
 
     <main class="main">
       <section class="main__preview">
-        <button class="button">
+        <button class="button js-reset-btn">
           <i class="fa-regular fa-trash-can"></i>
           <p class="button__reset">Reset</p>
         </button>
-        <aside class="card">
-          <div class="card__blueinfo">
-            <p class="card__blueinfo--bluename js_previewName" id="name">Nombre apellido</p>
-            <p class="card__blueinfo--bluejob js_previewJob" id="job">Front-end developer</p>
+        <aside class="card js_preview-container palette-1">
+          <div class="card__info">
+            <p class="card__info--name js_previewName" id="name">Nombre apellido</p>
+            <p class="card__info--job  js_previewJob" id="job">Front-end developer</p>
           </div>
           <div class="card__photo  js__profile-image" id="profileImage"></div>
           <ol class="rrss">
-            <li class="rrss__bluelist">
+            <li class="rrss__list ">
               <a href="#" target="_blank" class="js_previewTel" id="tel">
-                <i class="rrss__bluelist--blueitem fa-solid fa-mobile-screen fa-xl"></i>
+                <i class="rrss__list--item  fa-solid fa-mobile-screen fa-xl"></i>
               </a>
             </li>
-            <li class="rrss__bluelist">
+            <li class="rrss__list ">
               <a href="#" target="_blank" class="js_previewEmail" id="email">
-                <i class="rrss__bluelist--blueitem fa-regular fa-envelope fa-xl"></i>
+                <i class="rrss__list--item fa-regular fa-envelope fa-xl"></i>
               </a>
             </li>
-            <li class="rrss__bluelist">
+            <li class="rrss__list ">
               <a href="#" target="_blank" class="js_previewLinkedin" id="LinkedIn">
-                <i class="rrss__bluelist--blueitem fa-brands fa-linkedin-in fa-xl"></i>
+                <i class="rrss__list--item fa-brands fa-linkedin-in fa-xl"></i>
               </a>
             </li>
-            <li class="rrss__bluelist">
+            <li class="rrss__list ">
               <a href="#" target="_blank" class="js_previewGithub" id="github">
-                <i class="rrss__bluelist--blueitem fa-brands fa-github-alt fa-xl"></i>
+                <i class="rrss__list--item fa-brands fa-github-alt fa-xl"></i>
               </a>
             </li>
           </ol>
@@ -72,11 +72,12 @@
           <div class="election js-designFieldset">
              <h3 class="design__color">Colores</h3>
             <div class="election__options point">
-            <label  class="color-palet" for="colors1"
+            <label class="color-palet" for="colors1"
               ><input
+              class="js_radio js_firstRadio"
                 id="colors1"
                 type="radio"
-                value="selectcolors"
+                value="1"
                 name="selectcolors"
                 checked
               />
@@ -90,9 +91,10 @@
             <div class="election__options point">
             <label class="color-palet" for="colors2"
               ><input
+              class="js_radio"
                 id="colors2"
                 type="radio"
-                value="selectcolors"
+                value="2"
                 name="selectcolors"
               />
               <div class="election__options rectangle">
@@ -105,9 +107,10 @@
             <div class="election__options point">
             <label class="color-palet" for="colors3"
               ><input
+              class="js_radio"
                 id="colors3"
                 type="radio"
-                value="selectcolors"
+                value="3"
                 name="selectcolors" />
               <div class="election__options rectangle">
                 <div class="rectangle-3__a"></div>
@@ -124,50 +127,97 @@
               <i class="fill__title--icon fa-solid fa-keyboard"></i>
               <h3 class="fill__title--word">rellena</h3>
             </div>
-            <i class="fill__title--chevron fa-solid fa-chevron-up js-fill-arrow" id="fill"></i>
+            <i
+              class="fill__title--chevron fa-solid fa-chevron-up js-fill-arrow"
+              id="fill"
+            ></i>
           </div>
 
           <div class="js-fillFieldset collapsed js_allInputs">
             <form class="fill__form" action="#" method="post">
-              <label for="name"> Nombre completo </label>
+              <label for="name"> Nombre completo<span>*</span></label>
 
-              <input class="fill__form--imput js_inputName" placeholder="Ej: Sally Hill" id="name" type="text" name="name"
-                required />
+              <input
+                class="fill__form--imput js_inputName js_input"
+                placeholder="Ej: Sally Hill"
+                id="name"
+                type="text"
+                name="name"
+                required
+              />
 
-              <label for="job">Puesto </label>
-              <input class="fill__form--imput js_inputJob" placeholder="Ej: Front-end unicorn" id="job" type="text" name="job"
-                required />
+              <label for="job">Puesto<span>*</span></label>
+              <input
+                class="fill__form--imput js_inputJob js_input"
+                placeholder="Ej: Front-end unicorn"
+                id="job"
+                type="text"
+                name="job"
+                required
+              />
 
-              <p class="profileImgTitle">Imagen de perfil</p>
+              <p class="profileImgTitle">Imagen de perfil<span>*</span></p>
 
               <div class="imgButton">
                 <div class="action">
-                  <label class="action__upload-btn" for="profileImg">Añadir imagen</label>
-                  <input type="file" name="profileImg" id="profileImg"
-                    class="action__hiddenField js__profile-upload-btn js_inputImg" />
+                  <label class="action__upload-btn" for="profileImg"
+                    >Añadir imagen</label
+                  >
+                  <input
+                    type="file"
+                    name="profileImg"
+                    id="profileImg"
+                    class="action__hiddenField js__profile-upload-btn js_inputImg js_input"
+                    required
+                  />
                 </div>
                 <div class="profile__preview js__profile-preview"></div>
               </div>
 
-              <label for="email">Email <span>*</span> </label>
-              <input class="fill__form--imput js_inputEmail" placeholder="Ej: sally-hill@gmail.com" id="email" type="email"
-                name="email" required />
+              <label for="email">Email<span>*</span></label>
+              <input
+                class="fill__form--imput js_inputEmail js_input"
+                placeholder="Ej: sally-hill@gmail.com"
+                id="email"
+                type="email"
+                name="email"
+                required
+              />
 
-              <label for="tel">Teléfono </label>
-              <input class="fill__form--imput js_inputTel" placeholder="Ej: 555-55-55-55" id="tel" type="tel" name="tel" />
+              <label for="phone">Teléfono</label>
+              <input
+                class="fill__form--imput js_inputTel"
+                placeholder="Ej: 555-55-55-55"
+                id="phone"
+                type="tel"
+                name="phone"
+              />
 
-              <label for="LinkedIn">LinkedIn <span>*</span> </label>
-              <input class="fill__form--imput js_inputLinkedin" placeholder="Ej: linkedin.com/in/sally.hill" id="LinkedIn"
-                type="text" name="LinkedIn" required />
+              <label for="linkedin">LinkedIn<span>*</span></label>
+              <input
+                class="fill__form--imput js_inputLinkedin js_input"
+                placeholder="Ej: https://www.linkedin.com/in/sally-hill/"
+                id="linkedin"
+                type="text"
+                name="linkedin"
+                required
+              />
 
               <label for="github">Github <span>*</span> </label>
-              <input class="fill__form--imput js_inputGithub" placeholder="Ej: @sally-hill" id="github" type="text"
-                name="github" required />
+              <input
+                class="fill__form--imput js_inputGithub js_input"
+                placeholder="Ej: https://github.com/sally-hill/"
+                id="github"
+                type="text"
+                name="github"
+                required
+              />
             </form>
           </div>
 
           <hr />
         </fieldset>
+
         <fieldset class="share1">
           <div class="share1__div">
             <div class="header-container">
@@ -182,27 +232,29 @@
           </div>
 
           <div class="share1__container js-shareFieldset collapsed">
-            <button class="share1__container--button">
+            <button class="share1__container--button js_shareBtn">
               <i class="fa-solid fa-address-card"></i> Crear tarjeta
             </button>
+            <p class="js_warning warning"></p>
           </div>
 
-          <div class="collapsed">
+          <div class="js_shareTwitter collapsed">
             <!-- ^este div va con la clase share2 -->
 
             <p class="share2__p">La tarjeta ha sido creada:</p>
 
-            <a
-              class="share2__link"
-              href="https://awesome-profile-card.com?id=A456DF0001"
-              >https://awesome-profile-card.com?id=A456DF0001</a
-            >
-
-            <a href="#">
-              <button class="share2__button--twitter">
-                <i class="fa-brands fa-twitter"></i>Compartir en twitter
-              </button>
-            </a>
+            <div class="share2">
+              <a
+                class="share2__link js_link-card"
+                href="https://awesome-profile-card.com?id=A456DF0001"
+                target="_blank"
+              ></a>
+              <a href="#" class="js_shareTwitterBtn" target="_blank">
+                <button class="share2__button--twitter">
+                  <i class="fa-brands fa-twitter"></i>Compartir en twitter
+                </button>
+              </a>
+            </div>
           </div>
         </fieldset>
 
