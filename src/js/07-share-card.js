@@ -5,6 +5,8 @@ const linkCard = document.querySelector('.js_link-card');
 
 const warning = document.querySelector('.js_warning');
 
+const btnTwitter = document.querySelector('.js_shareTwitterBtn');
+
 
 
 function handleCreateCard(ev) {
@@ -24,6 +26,10 @@ function handleCreateCard(ev) {
             linkCard.href = serverResp.cardURL;
             shareTwitter.classList.remove('collapsed');
             shareBtn.classList.add('clicked');
+
+            btnTwitter.href = `https://twitter.com/intent/tweet?text=Os%20comparto%20mi%20tarjeta%20profesional&url=${serverResp.cardURL}`;
+
+
 
         }else {
             warning.innerHTML = 'Deben estar rellenos todos los campos';  
