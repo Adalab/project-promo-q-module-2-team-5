@@ -29,7 +29,8 @@ function handleCreateCard(ev) {
 
             btnTwitter.href = `https://twitter.com/intent/tweet?text=Os%20comparto%20mi%20tarjeta%20profesional&url=${serverResp.cardURL}`;
 
-
+            localStorage.setItem("cardStoraged", JSON.stringify (serverResp.cardURL));
+            
 
         }else {
             warning.innerHTML = 'Deben estar rellenos todos los campos';  
