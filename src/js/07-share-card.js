@@ -14,30 +14,31 @@ function handleCreateCard(ev) {
     console.log(data);
     fetch('https://awesome-profile-cards.herokuapp.com/card', {
         method: 'POST',
-        headers: {'Content-Type': 'application/json'},
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data)
     })
-    .then((response) =>response.json())
-    .then((serverResp) => {
-        console.log(serverResp);
+        .then((response) => response.json())
+        .then((serverResp) => {
+            console.log(serverResp);
 
-        if(serverResp.success) {
-            linkCard.innerHTML = serverResp.cardURL;
-            linkCard.href = serverResp.cardURL;
-            shareTwitter.classList.remove('collapsed');
-            shareBtn.classList.add('clicked');
-            warning.innerHTML = "";
+            if (serverResp.success) {
+                linkCard.innerHTML = serverResp.cardURL;
+                linkCard.href = serverResp.cardURL;
+                shareTwitter.classList.remove('collapsed');
+                shareBtn.classList.add('clicked');
+                warning.innerHTML = "";
+                warning.innerHTML = '';
 
-            btnTwitter.href = `https://twitter.com/intent/tweet?text=Os%20comparto%20mi%20tarjeta%20profesional&url=${serverResp.cardURL}`;
+                btnTwitter.href = `https://twitter.com/intent/tweet?text=Os%20comparto%20mi%20tarjeta%20profesional&url=${serverResp.cardURL}`;
 
-            localStorage.setItem("cardStoraged", JSON.stringify (serverResp.cardURL));
-            
+                localStorage.setItem("cardStoraged", JSON.stringify(serverResp.cardURL));
 
-        }else {
-            warning.innerHTML = 'Deben estar rellenos todos los campos';
-            
-        }
-    });
+
+            } else {
+                warning.innerHTML = 'Deben estar rellenos todos los campos';
+
+            }
+        });
 }
 
 
