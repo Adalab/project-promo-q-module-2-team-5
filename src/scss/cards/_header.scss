@@ -1,20 +1,15 @@
-.second{
-    &__header {
-        height: 111px;
-        display: flex;
-        justify-content: center;
-        @media all and (min-width: 768px){
-            justify-content: flex-start;
-            margin-left: 40px;
-        }
+.second {
+  &__header {
+    height: 111px;
+    display: flex;
+    justify-content: center;
+    @media all and (min-width: 768px) {
+      justify-content: flex-start;
     }
+  }
 
-    &__logo{
-        padding: 10px;
-        margin-top: 10px;
-        width: 201px;
-        height: 79px;  
-    }
+  &__logo {
+    height: 120px;
+    padding-left: 10px;
+  }
 }
-
-
