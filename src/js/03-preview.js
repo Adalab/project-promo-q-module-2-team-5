@@ -30,8 +30,6 @@ const handleInput = (ev) => {
   } else if (valueInput === "") {
     id.href.disabled = true;
   }
-
-  //listenerButtons();
 };
 
 allInputs.addEventListener("keyup", handleInput);
@@ -39,14 +37,17 @@ allInputs.addEventListener("keyup", handleInput);
 //FUNCIÓN PARA DESHABILITAR LOS BOTONES SI NO TIENEN NADA EN EL HREF
 
 // function listenerButtons() {
-//   let allButtons = document.querySelectorAll(".js_previewBtn");
-
+//   allButtons = document.querySelectorAll(".js_previewBtn");
+//   console.log(allButtons);
 //   for (const eachBtn of allButtons) {
 //     eachBtn.addEventListener("click", buttonsDisabled);
 //   }
 // }
 
 // function buttonsDisabled(ev) {
+//   console.log(ev);
+//   console.log(`ha entrado`);
 //   ev.preventDefault();
-//   const valueHref = ev.target.href;
 // }
+
+// listenerButtons();
