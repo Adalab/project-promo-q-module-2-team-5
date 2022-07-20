@@ -1,7 +1,6 @@
 "use strict";
 
 const allInputs = document.querySelector(".js_allInputs");
-let allButtons = [];
 
 const data = {
   palette: 1,
@@ -13,6 +12,10 @@ const data = {
   github: "",
   photo: "",
 };
+
+const allButtons = document.querySelectorAll(".js_previewBtn");
+
+allButtons.forEach((item) => item.removeAttribute("href"));
 
 const handleInput = (ev) => {
   const nameInput = ev.target.name;
@@ -33,21 +36,3 @@ const handleInput = (ev) => {
 };
 
 allInputs.addEventListener("keyup", handleInput);
-
-//FUNCIÓN PARA DESHABILITAR LOS BOTONES SI NO TIENEN NADA EN EL HREF
-
-// function listenerButtons() {
-//   allButtons = document.querySelectorAll(".js_previewBtn");
-//   console.log(allButtons);
-//   for (const eachBtn of allButtons) {
-//     eachBtn.addEventListener("click", buttonsDisabled);
-//   }
-// }
-
-// function buttonsDisabled(ev) {
-//   console.log(ev);
-//   console.log(`ha entrado`);
-//   ev.preventDefault();
-// }
-
-// listenerButtons();
