@@ -48,6 +48,7 @@ const handleReset = (ev) => {
   localStorage.removeItem("cardStoraged");
   shareTwitter.classList.add("collapsed");
   shareBtn.classList.remove("clicked");
+  allButtons.forEach((item) => item.removeAttribute("href"));
 };
 
 resetBtn.addEventListener("click", handleReset);
