@@ -6,8 +6,8 @@ $font-title: "Merriweather", serif;
 $background-landing: #f5f5f5;
 $background-card-1: #dde9ed;
 $background-card-2: #bfcdd0;
-$color-icon: #e17334;
-$color-font: #54585a;
+$color-icon: #b40001;
+$color-font: black;
 $color-font-footer: #d8d8d8;
 $color-font-preview: #114e4e;
 $color-round-icon: #a2deaf;
@@ -17,18 +17,18 @@ $color-twitter: #00a0f5;
 $color-card-share: #d5d5d5;
 $color-placeholder: #c5c5c5;
 $color-font-preview-2: #420101;
-$color-button-bar-2:#bd1010;
+$color-button-bar-2: #bd1010;
 $color-round-icon-2: #e95626;
 $color-font-preview-3: #3e5b65;
-$color-button-bar-3:#eab052;
+$color-button-bar-3: #eab052;
 $color-round-icon-3: #a0c0cf;
 
 // Clases para js
 
-.collapsed{
-    display: none;
+.collapsed {
+  display: none;
 }
 
-.rotate{
-    transform: rotate(180deg);
+.rotate {
+  transform: rotate(180deg);
 }

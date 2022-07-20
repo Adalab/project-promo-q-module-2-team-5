@@ -2,15 +2,14 @@
   display: flex;
   flex-direction: column;
   font-family: $font-main;
-  color: $color-font-preview;
+  color: white;
   font-size: 14px;
   margin: 0px 20px;
-  border-bottom: 2px solid $color-font-footer;
+  border-bottom: 2px solid $color-icon;
 
   &__title {
     display: flex;
     justify-content: space-between;
-
     font-size: 18px;
 
     &--icon {
@@ -20,12 +19,12 @@
     &--word {
       text-transform: uppercase;
       font-weight: bold;
-      color: $color-font;
+      color: white;
     }
 
     &--chevron {
       justify-self: flex-end;
-      color: $color-font;
+      color: $color-icon;
     }
   }
 
@@ -41,7 +40,7 @@
     &--imput {
       width: 100%;
       height: 30px;
-      border: 1px solid $color-round-icon;
+      border: 1px solid $color-icon;
       margin-bottom: 20px;
 
       ::placeholder {
@@ -90,7 +89,7 @@
 }
 
 .profile__preview {
-  background-image: url(https://placekitten.com/240/200);
+  background: url("../images/joker_face.jpg") no-repeat;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
