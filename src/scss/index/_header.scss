@@ -8,11 +8,15 @@
   background-color: black;
   box-sizing: border-box;
 
+  @media all and (min-width: 768px) {
+    height: 90vh;
+  }
+
   &__logo {
     width: 270px;
-    margin-top: 70px;
+    margin-top: 30px;
     @media all and (min-width: 768px) {
-      margin-top: 100px;
+      margin-top: 40px;
     }
   }
   &__title {
@@ -20,10 +24,10 @@
     color: $color-icon;
     font-size: 21px;
     font-weight: 900;
-    margin: 45px 22.9px 0px 22.1px;
+    margin: 20px 22.9px 10px 22.1px;
     @media all and (min-width: 768px) {
       font-size: 24px;
-      margin: 31px 71px 0px 70px;
+      margin: 10px 71px 5px 70px;
     }
   }
 
@@ -78,9 +82,9 @@
     }
   }
   &__link {
-    text-align: center;
-    width: 120px;
-    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 40px 55px 30px 55px;
     padding: 14px 20px;
     border-radius: 30px;
@@ -96,7 +100,7 @@
     @media all and (min-width: 768px) {
       width: 129px;
       height: 29px;
-      margin: 50px 319px 59px 319px;
+      margin: 35px 319px 59px 319px;
       font-size: 17px;
     }
   }
