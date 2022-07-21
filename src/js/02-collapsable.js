@@ -3,12 +3,15 @@
 const inputList = document.querySelectorAll(".js_input");
 const shareTwitter = document.querySelector(".js_shareTwitter");
 
+const designCollapsable = document.querySelector('.js-design');
+const fillCollapsable = document.querySelector('.js-fill');
+const shareCollapsable = document.querySelector('.js-share');
+
 designArrow.classList.add("rotate");
 
 function handleClick(ev) {
   ev.preventDefault();
   const id = ev.currentTarget.id;
-  console.log(ev.currentTarget.id);
 
   if (id === "design") {
     designFieldset.classList.toggle("collapsed");
@@ -46,6 +49,6 @@ function handleClick(ev) {
   }
 }
 
-designArrow.addEventListener("click", handleClick);
-fillArrow.addEventListener("click", handleClick);
-shareArrow.addEventListener("click", handleClick);
+designCollapsable.addEventListener("click", handleClick);
+fillCollapsable.addEventListener("click", handleClick);
+shareCollapsable.addEventListener("click", handleClick);

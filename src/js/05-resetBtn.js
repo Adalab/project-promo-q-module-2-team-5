@@ -22,7 +22,7 @@ function renderPreview(data) {
   previewEmail.href = data.email;
   previewLinkedin.href = data.linkedin;
   previewGithub.href = data.github;
-  previewImg.style.backgroundImage = "url( https://placekitten.com/240/200)";
+  previewImg.style.backgroundImage = "url(./assets/images/joker_face.jpg)";
 }
 
 //hay que limpiar los inputs
@@ -37,7 +37,7 @@ function clearAllInputs() {
   inputGithub.value = "";
   inputImg.value = "";
   profilePreview.style.backgroundImage =
-    "url( https://placekitten.com/240/200)";
+  "url(./assets/images/joker_face.jpg)";
 }
 
 const handleReset = (ev) => {
